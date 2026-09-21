@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dino Links</title>
+
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/index.css">
+
+  <script src="/scram/scramjet.all.js"></script>
+  <script src="/baremux/index.js"></script>
+  <script src="/register-sw.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+
+<body>
+
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">D</div>
+
+      <div>
+        <div class="brand-name">Dino Links</div>
+        <div class="brand-sub">web browser</div>
+      </div>
+    </div>
+
+    <button id="homeBtn" class="icon-btn" type="button">⌂</button>
+  </header>
+
+  <main id="home" class="home">
+    <section class="hero">
+
+      <div class="dino">DINO</div>
+
+      <h1>Browse the web</h1>
+
+      <p>Search the web or enter a website address</p>
+
+      <form id="searchForm" class="search-box">
+        <span>⌕</span>
+
+        <input
+          id="address"
+          type="text"
+          autocomplete="off"
+          placeholder="Search or enter a URL"
+        >
+
+        <button type="submit">Go</button>
+      </form>
+
+      <div id="status" class="status"></div>
+
+      <section id="results" class="results"></section>
+
+    </section>
+  </main>
+
+  <section id="browser" class="browser hidden">
+
+    <div class="browserbar">
+
+      <button id="backBtn" class="small-btn" type="button">←</button>
+
+      <button id="homeBrowserBtn" class="small-btn" type="button">⌂</button>
+
+      <input
+        id="browserAddress"
+        type="text"
+        placeholder="https://example.com"
+      >
+
+      <button id="goBtn" class="go-btn" type="button">Go</button>
+
+      <button id="fullBtn" class="small-btn" type="button">⛶</button>
+
+    </div>
+
+    <div id="frameHost" class="frame-host"></div>
+
+  </section>
+
+</body>
+</html>
